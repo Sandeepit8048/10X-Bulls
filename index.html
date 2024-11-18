@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Landing Page</title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+
+        }
+        
+        @media (max-width: 767px) {
+            .center-content {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            video {
+                width: 100%; 
+                height: auto;
+            }
+
+            .card {
+                margin: 20px; 
+            }
+        }
+        nav a {
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <!--  Nav -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./Access/WhatsApp Image 2024-10-11 at 18.42.36_de44e3e2.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">  
+          </a>
+           <a class="nav" href="./Home.html"><h3>Home</h3></a>
+           <a href="#"> <h3>Video</h3></a>
+        </div>
+      </nav>
+      
+      <!-- Video -->
+    <div class="center-content ">
+        <video src="./Access/124252-730508538_small.mp4" class="object-fit-cover" autoplay muted loop playsinline></video>
+    </div>
+
+    <!------------------------- Footer  -->
+    <div class=" text-center mt-4" style= "font-size: .5rem;">
+        <div class="card-header">
+         <h3>10XBulls</h3>
+        </div>
+        <div class="card-body" >
+          <blockquote class="blockquote mb-0"  style= "font-size:xx-small;">
+            <p>This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p><br>
+            <p>This website is operated and maintained by UAbility Private Limited. Use of the website is governed by its Terms Of Service and Privacy Policy.</p><br>
+            <p>UAbility Private Limited is a sales and marketing education and training company. We do not sell a business opportunity, “get rich quick” program or money-making system. We believe, with education, individuals can be better prepared to make investment decisions, but we do not guarantee success in our training. We do not make earnings claims, efforts claims, or claims that our training will make you any money. All material is intellectual property and protected by copyright. Any duplication, reproduction, or distribution is strictly prohibited. Please see our Full Disclosure for important details.</p><br>
+            <p>H1 S1 Rishi Vihar Amritsar, Punjab 143001</p>
+            <footer class="blockquote-footer">@10xbulls2024<cite title="Source Title"></cite></footer>
+          </blockquote>
+        </div>
+    </div>
+</body>
+</html>

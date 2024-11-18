@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Storage</title>
+</head>
+<body>
+    <h2>Saved Data</h2>
+    <table border="1" id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Function to save data to local storage
+
+        // Function to display data from local storage in the table
+        function displayData() {
+            const dataList = JSON.parse(localStorage.getItem('formData')) || [];
+
+            console.log(dataList);
+            const tableBody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+            
+            // Clear the table body before repopulating
+            tableBody.innerHTML = '';
+
+            // Loop through each data item and create table rows
+            dataList.forEach(data => {
+                const row = tableBody.insertRow();
+                row.insertCell(0).textContent = data.userName;
+                row.insertCell(1).textContent = data.email;
+                row.insertCell(2).textContent = data.number;
+            });
+        }
+
+        // Display data on page load
+        window.onload = displayData;
+    </script>
+</body>
+</html>
